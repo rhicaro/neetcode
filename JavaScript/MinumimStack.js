@@ -1,7 +1,7 @@
 /**
  * Represents a stack that supports push, pop, top, and getMin operations.
  */
-class MinStack {
+class MinStack { //Class was created to hold all of the operations
     constructor() {
         this.stack = [];
         this.minStack = [];
@@ -12,7 +12,7 @@ class MinStack {
      * @param {number} val - The value to be pushed onto the stack.
      * @return {void}
      */
-    push(val) {
+    push(val) { //
         this.stack.push(val);
         if (this.minStack.length === 0 || val <= this.minStack[this.minStack.length - 1]) {
             this.minStack.push(val);
